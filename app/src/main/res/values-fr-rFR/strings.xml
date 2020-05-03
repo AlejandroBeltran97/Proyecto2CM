@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhyBook</string>
+    <string name="hint_name">Titre du Livre</string>
+    <string name="hint_author">Auteur</string>
+    <string name="hint_editorial">Éditorial</string>
+    <string name="hint_place">Lieu</string>
+    <string name="hint_genre">Genre</string>
+</resources>

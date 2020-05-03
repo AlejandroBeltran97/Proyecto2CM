@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PhyBook</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_author">Autor</string>
+    <string name="hint_editorial">Editorial</string>
+    <string name="hint_place">Lugar</string>
+
+    <string-array name="items_en">
+        <item>Drama</item>
+        <item>Poetry</item>
+        <item>Biography</item>
+        <item>Fantasy</item>
+        <item>Terror</item>
+    </string-array>
+
+    <string-array name="items_es">
+        <item>Drama</item>
+        <item>Poetry</item>
+        <item>Biography</item>
+        <item>Fantasy</item>
+        <item>Terror</item>
+    </string-array>
+
+    <string-array name="items_fr">
+        <item>Drame</item>
+        <item>Poésie</item>
+        <item>Biography</item>
+        <item>Fantaisie</item>
+        <item>Horreur</item>
+    </string-array>
+    <string name="hint_genre">Género</string>
+</resources>

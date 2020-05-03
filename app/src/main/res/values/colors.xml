@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3288858C</color>
+    <color name="colorPrimaryDark">#C988858C</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Título -->
+    <color name="titleColor">#FFFFFF</color>
+
+    <!-- Edit Nombre -->
+    <color name="editName">#FFFFFF</color>
+
+    <!-- Fondo Entradas -->
+    <color name="backColor">#978C8C</color>
+
+    <!-- Flecha Dropdown -->
+    <color name="arrColor">#FFFFFF</color>
+    
+    <!-- Floating Label Dropdown -->
+    <color name="floatColor">#FFFFFF</color>
+
+    <!-- Hint Spinner -->
+    <color name="hintColor">#000000</color>
+
+    <!-- Base -->
+    <color name="baseColor">#FFFFFF</color>
+
+    <!-- Highlight -->
+    <color name="highColor">#FFFFFF</color>
+</resources>

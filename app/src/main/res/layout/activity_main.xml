@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/bgBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgbooks"/>
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/amita"
+        android:text="@string/app_name"
+        android:textColor="@color/titleColor"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgBooks" />
+
+    <RelativeLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgeditors"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleBookLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_name"
+            android:textColorHint="@color/editName"
+            android:layout_marginLeft="20dp"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleBookEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editName"
+                android:theme="@style/EditText">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/authorBookLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:hint="@string/hint_author"
+            android:textColorHint="@color/editName"
+            android:layout_marginLeft="20dp"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/authorBookEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editName"
+                android:theme="@style/EditText">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editorialBookLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:hint="@string/hint_editorial"
+            android:textColorHint="@color/editName"
+            android:layout_marginLeft="20dp"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editorialBookEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editName"
+                android:theme="@style/EditText">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/placeBookLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:hint="@string/hint_place"
+            android:textColorHint="@color/editName"
+            android:layout_marginLeft="20dp"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/placeBookEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editName"
+                android:theme="@style/EditText">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spin_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeBookLayout"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="15dp"/>
+
+        <Spinner
+            android:id="@+id/spin_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeBookLayout"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="180dp"/>
+
+        <!--        <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spin_gen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="230dp"
+                    app:ms_arrowColor="@color/arrColor"
+                    app:ms_arrowSize="16dp"
+                    app:ms_hint="@string/hint_genre"
+                    app:ms_hintColor="@color/hintColor"
+                    app:ms_baseColor="@color/baseColor"
+                    app:ms_highlightColor="@color/highColor"
+                    app:ms_floatingLabelColor="@color/hintColor" />-->
+
+    </RelativeLayout>
+    <!--
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spin_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lin_layout"
+            app:ms_arrowColor="@color/arrColor"
+            app:ms_arrowSize="16dp"
+            app:ms_hint="@string/hint_genre"
+            app:ms_hintColor="@color/hintColor"/>
+
+        <Spinner
+            android:id="@+id/spin_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lin_layout" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
