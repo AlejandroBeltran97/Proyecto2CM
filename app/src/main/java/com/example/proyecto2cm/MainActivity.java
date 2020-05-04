@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinnerYear = (Spinner) findViewById(R.id.spin_year);
 
         myDB = new DatabaseHelper(this);
+        myDB.deleteAll();
 
         ArrayList<String> years = new ArrayList<String>();
         int thisYear = Calendar.getInstance().get(Calendar.YEAR);
