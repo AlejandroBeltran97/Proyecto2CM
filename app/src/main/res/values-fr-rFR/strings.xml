@@ -6,4 +6,8 @@
     <string name="hint_editorial">Éditorial</string>
     <string name="hint_place">Lieu</string>
     <string name="hint_genre">Genre</string>
+    <string name="btn_addData">Ajouter des Données</string>
+    <string name="alert_field">Ce champ est obligatoire</string>
+    <string name="text_popup">Données ajoutées!</string>
+    <string name="btn_visualize">Afficher les Données</string>
 </resources>

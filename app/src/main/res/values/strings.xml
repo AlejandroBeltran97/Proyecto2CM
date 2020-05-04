@@ -6,27 +6,64 @@
     <string name="hint_place">Lugar</string>
 
     <string-array name="items_en">
-        <item>Drama</item>
-        <item>Poetry</item>
         <item>Biography</item>
+        <item>Childish</item>
         <item>Fantasy</item>
+        <item>History</item>
+        <item>Languages</item>
+        <item>Math</item>
+        <item>Medieval</item>
+        <item>Nature</item>
+        <item>Overcoming</item>
+        <item>Poetry</item>
+        <item>Research</item>
+        <item>Romance</item>
+        <item>Science</item>
         <item>Terror</item>
+        <item>Theater</item>
+        <item>Thesis</item>
     </string-array>
 
     <string-array name="items_es">
-        <item>Drama</item>
-        <item>Poetry</item>
-        <item>Biography</item>
-        <item>Fantasy</item>
+        <item>Biografía</item>
+        <item>Infantil</item>
+        <item>Fantasía</item>
+        <item>Historia</item>
+        <item>Idiomas</item>
+        <item>Matemáticas</item>
+        <item>Medieval</item>
+        <item>Naturaleza</item>
+        <item>Superación</item>
+        <item>Poesía</item>
+        <item>Investigación</item>
+        <item>Romance</item>
+        <item>Ciencia</item>
         <item>Terror</item>
+        <item>Teatro</item>
+        <item>Tésis</item>
     </string-array>
 
     <string-array name="items_fr">
-        <item>Drame</item>
-        <item>Poésie</item>
-        <item>Biography</item>
+        <item>Biographie</item>
+        <item>Bébé</item>
         <item>Fantaisie</item>
+        <item>L\'histoire</item>
+        <item>Langues</item>
+        <item>Matematiques</item>
+        <item>Médiéval</item>
+        <item>La Nature</item>
+        <item>Surmonter</item>
+        <item>Poésie</item>
+        <item>Enquête</item>
+        <item>Romance</item>
+        <item>Science</item>
         <item>Horreur</item>
+        <item>Théâtre</item>
+        <item>Thèse</item>
     </string-array>
     <string name="hint_genre">Género</string>
+    <string name="btn_addData">Añadir Datos</string>
+    <string name="alert_field">Este campo es obligatorio</string>
+    <string name="text_popup">¡Datos Añadidos!</string>
+    <string name="btn_visualize">Mostrar Datos</string>
 </resources>

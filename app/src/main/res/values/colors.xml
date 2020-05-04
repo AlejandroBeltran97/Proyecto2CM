@@ -27,4 +27,7 @@
 
     <!-- Highlight -->
     <color name="highColor">#FFFFFF</color>
+
+    <!-- BG Pop Up -->
+    <color name="bgpopup">#5C7797</color>
 </resources>
