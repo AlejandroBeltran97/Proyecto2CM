@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/bgbooks"/>
+        android:src="@drawable/bgbooks" />
 
     <TextView
         android:id="@+id/appTitle"
@@ -32,6 +31,7 @@
         android:id="@+id/lin_layout"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
         android:background="@drawable/bgeditors"
         android:focusableInTouchMode="true"
         android:gravity="center_horizontal"
@@ -45,10 +45,15 @@
             android:id="@+id/titleBookLayout"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
             android:hint="@string/hint_name"
             android:textColorHint="@color/editName"
-            android:layout_marginLeft="20dp"
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -57,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/editName"
                 android:theme="@style/EditText">
+
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -65,11 +71,15 @@
             android:id="@+id/authorBookLayout"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="30dp"
             android:hint="@string/hint_author"
             android:textColorHint="@color/editName"
-            android:layout_marginLeft="20dp"
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -78,6 +88,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/editName"
                 android:theme="@style/EditText">
+
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -86,11 +97,15 @@
             android:id="@+id/editorialBookLayout"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="30dp"
             android:hint="@string/hint_editorial"
             android:textColorHint="@color/editName"
-            android:layout_marginLeft="20dp"
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -99,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/editName"
                 android:theme="@style/EditText">
+
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -107,11 +123,15 @@
             android:id="@+id/placeBookLayout"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="30dp"
             android:hint="@string/hint_place"
             android:textColorHint="@color/editName"
-            android:layout_marginLeft="20dp"
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -120,6 +140,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/editName"
                 android:theme="@style/EditText">
+
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -129,34 +150,61 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/placeBookLayout"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" />
 
         <Spinner
             android:id="@+id/spin_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/placeBookLayout"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="180dp"/>
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="15dp" />
 
         <Button
             android:id="@+id/btn_addData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_addData"
-            android:layout_marginTop="280dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgbuttons"
+            android:text="@string/btn_addData" />
 
         <Button
             android:id="@+id/vis_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="280dp"
+            android:layout_alignParentEnd="true"
             android:layout_marginLeft="140dp"
-            android:text="@string/btn_visualize"/>
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/bgbuttons"
+            android:text="@string/btn_visualize" />
 
     </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="55dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="626dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="355dp" />
     <!--
         <fr.ganfra.materialspinner.MaterialSpinner
             android:id="@+id/spin_gen"
